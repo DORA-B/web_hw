@@ -187,6 +187,7 @@ mdn
 2. href属性
 
 hyper reference：通常表示跳转地址
+***lorem + 单词数量***
 
 1. 普通链接
 2. 锚链接
@@ -345,6 +346,8 @@ li：list item
 ```
 ## 无序列表
 
+![avatar](ul.jpg)
+
 把ol改成ul
 ul：unordered list
 无序列表常用于制作菜单 或 新闻列表。
@@ -396,4 +399,3 @@ article: 通常用于表示整篇文章
 section: 通常用于表示文章的章节
 
 aside: 通常用于表示侧边栏
-
