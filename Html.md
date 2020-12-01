@@ -1,5 +1,5 @@
 # 网页设计
-
+<!-- shift+alt+f:自动格式化 -->
 URL:<https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element>
 
 ## 对论坛前端的基本设计
