@@ -333,3 +333,67 @@ target的取值：
 2. 不同的浏览器支持的音视频格式可能不一致
 （usually:mp4、webm(兼容性较好)）
 ```
+## 有序列表
+
+ol: ordered list
+li：list item
+```
+ <ol reversed>
+        <li>打开冰箱门</li>
+        <li>大象进去</li>
+ </ol>
+```
+## 无序列表
+
+把ol改成ul
+ul：unordered list
+无序列表常用于制作菜单 或 新闻列表。
+```
+<!-- ul>li*4>lorem1 -->
+ <ul>
+        <li>有</li>
+        <li>有</li>
+ </ul>
+```
+## 定义列表
+
+通常用于一些术语的定义
+
+dl: definition list
+dt: definition title
+dd: definition description
+
+> HTML <dl> 元素 （或 HTML 描述列表元素）是一个包含术语定义以及描述的列表，通常用于展示词汇表或者元数据 (键-值对列表)。 在 HTML5 之前， <dl> 被大家以定义列表所熟知
+
+> 默认dd列表内容会一定缩进
+```
+    <dl>
+        <dt>HTML</dt>
+        <dd>
+            超文本标记语言，XXXXXX
+        </dd>
+
+        <dt>元素</dt>
+        <dd>
+            组成HTML文档的单元，每个xxxxx
+        </dd>
+    </dl>
+```
+## 容器元素
+
+容器元素：该元素代表一个块区域，内部用于放置其他元素(可展开适的模块，内置菜单)
+
+> div
+
+### 语义化容器元素
+
+header: 通常用于表示页头，也可以用于表示文章的头部
+
+footer: 通常用于表示页脚，也可以用于表示文章的尾部
+
+article: 通常用于表示整篇文章
+
+section: 通常用于表示文章的章节
+
+aside: 通常用于表示侧边栏
+
