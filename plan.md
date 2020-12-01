@@ -198,8 +198,7 @@ a[herif="#chapter$"]*6>{章节$}
  <a href="#">回到顶部</a>
 ```
 
-可以通过"<a href="锚链接.html">"直接从某个网页的某处跳转到另一网页的某处
-
+ 可以通过<!--<a href="锚链接.html">"-->直接从某个网页的某处跳转到另一网页的某处
 3.功能链接
 点击后，触发某个功能
 
@@ -222,14 +221,18 @@ a[herif="#chapter$"]*6>{章节$}
     </a>
 
 ```
+
 ## target属性
 
 表示跳转窗口位置。
 
 target的取值：
 
-- _self：在当前页面窗口中打开，默认值(覆盖当前页面)
-- _blank: 在新窗口中打开(打开新的页面)
+- _blank 在新窗口中打开被链接文档(打开新的页面)。
+- _self 默认。在相同的框架中打开被链接文档。(覆盖当前页面)
+- _parent 在父框架集中打开被链接文档。
+- _top 在整个窗口中打开被链接文档。
+- framename 在指定的框架中打开被链接文档。
 
 ```exp
  <a href="https://douyu.com" target="_blank" title="斗鱼，每个人的直播平台">
@@ -249,4 +252,84 @@ target的取值：
 
 ## 插入图片
 
- 
+### image
+
+>和超链接a元素联用
+注意：
+
+1. href：跳转到目的网页
+2. src属性：source
+3. alt属性：当图片资源失效时，将使用该属性的文字替代图片
+
+```exp
+
+<figure>
+        <a target="_blank" href="https://baike.baidu.com/item/%E5%A4%AA%E9%98%B3%E7%B3%BB/173281?fr=aladdin">
+            <img usemap="#solarMap" src="./img/solar.jpg" alt="这是一张太阳系的图片">
+            <!-- image缩写，空元素;src属性：source;alt属性：当图片资源失效时，将使用该属性的文字替代图片 -->
+        </a>
+        <figcaption>
+            <h2>太阳系</h2>
+        </figcaption>
+        <p>
+            太阳系是以太阳为中心，和所有受到太阳的引力约束天体的集合体。
+        </p>
+    </figure>
+
+<!-- 为了让图片和之后的相关操作联系起来 -->
+<!-- <img usemap="#solarMap" -->
+然后在相关操作中使用
+<!-- <map name="solarMap"> -->
+
+```
+
+### map:地图
+
+````map
+<map name="solarMap">
+        <area shape="circle" coords="360,204,48" href="https://baike.baidu.com" target="_blank">
+        <area shape="rect" coords="323,282,395,320" href="https://baike.baidu.com/" target="_blank">
+        <area shape="poly" coords="601,371,645,312,678,338,645,392" href="https://baike.baidu.com" target="_blank">
+    </map>
+
+    circle coords="Ox,Oy,R"
+    rectangular coords="X_left_up,y_left_up,x__right_down,y__right_down"
+    poly coords="x1,y1,xi,yi...xn,yn"
+```
+#### <figure> 元素表一段独立的内容, 经常与说明（caption） <figcaption> 配合使用,
+
+```figure
+<figure>
+    <img src="/media/cc0-images/elephant-660-480.jpg"
+         alt="Elephant at sunset">
+    <figcaption>An elephant at sunset</figcaption>
+</figure>
+```
+```
+<!-- Just an image -->
+<figure>
+  <img
+  src="https://developer.cdn.mozilla.net"
+  alt="A robotic monster over the letters MDN.">
+</figure>
+<!-- Image with a caption -->
+<figure>
+  <img
+  src="https://developer.cdn.mozilla.net/logo-sm.png"
+  alt="A robotic monster over the letters MDN."> <figcaption>MDN Logo</figcaption>
+</figure>
+```
+
+## 多媒体文件
+
+1. video 视频
+2. audio 音频
+
+> 某些属性(controls自动播放\muted静音播放\loop循环播放),控制控件的显示，只有两种状态：
+>1. 不写
+>2. 取值为属性名，这种属性叫做布尔属性,在HTML5中，可以不用书写属性值
+```
+1. 旧版本的浏览器不支持这两个元素
+2. 不同的浏览器支持的音视频格式可能不一致
+（usually:mp4、webm(兼容性较好)）
+```
