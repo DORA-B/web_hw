@@ -348,7 +348,7 @@ li：list item
 ```
 ## 无序列表
 
-![avatar](./ul.jpg)
+![alttag](assets/ul-example.png)
 
 把ol改成ul
 ul：unordered list

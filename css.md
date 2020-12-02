@@ -400,3 +400,14 @@ link > visited > hover > active
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/mystyle.css">
 ```
+
+## 继承(mdn)
+
+chorme(inherited from ...)
+
+子元素会继承父元素的某些CSS属性
+
+通常，跟文字内容相关的属性都能被继承
+>color font-size font-weight font-family
+
+## 属性值的计算过程
