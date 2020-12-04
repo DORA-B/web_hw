@@ -2,18 +2,88 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
-  <title> log&nbsp;in&ndash;TongjiOj </title>
- <!-- import css 链接外部的样式表-->
-  <link rel="stylesheet" href="login.css"> 
-  <link>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <title> log&nbsp;in &ndash; Tongji Oj </title>
+    <!-- import css 链接外部的样式表-->
+    <link rel="stylesheet" href="login.css">
+    <link>
 </head>
 
 <body>
-  <div>
+    <div id="the_biggest_outer">
+        <section class="section">
+            <div class="container">
 
-    
-  </div>
+                <div class="left_part off2">
+                    <div class="main_box_left">
+                        <div class="logo_brand">
+                            <img src="assets/logo.svg" alt="logo" width="200" class="logo">
+                        </div>
+                        <h4 class="welcome_title">欢迎登陆同济OJ</h4>
+                        <p class="beside_welcome_title"> 积累就是成长</p>
+                        <form action="java_input" method="POST" class="need_validate" novalidate>
+                            <div class="login-form-item">
+                                <div class="form-group">
+                                    <label for="email">邮箱</label>
+                                    <input id="email" type="email" class="form-control" name="email" tabindex="1" required="" autofocus="">
+                                    <div class="invalid-feedback">
+                                        请填写邮箱
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="d-block">
+                                        <label for="password" class="control-label">密码</label>
+                                        <div class="float-right">
+                                            <a href="/password/reset" class="text-small">                忘记密码？                   </a>
+                                        </div>
+                                    </div>
+                                    <input id="password" type="password" class="form-control" name="password" tabindex="2" required="">
+                                    <div class="invalid-feedback">
+                                        请填写密码
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="2fa-form" class="form-group" style="display: none;">
+                                <label for="2fa-code">二步验证</label>
+                                <input id="2fa-code" type="number" class="form-control" name="2fa-code" tabindex="1" maxlength="6" placeholder="请输入6位验证码" required="">
+                                <div class="invalid-feedback">
+                                    请输入验证码
+                                </div>
+                            </div>
+                            <div class="form-group text-right">
+                                <button type="submit" class="btn btn-primary btn-lg btn-icon icon-right login" tabindex="4"> 登录  </button>
+                            </div>
+                        </form>
+                        <div class="register">
+                            还没有账号？ <a href="/auth/register">马上注册</a>
+                        </div>
+                        <div class="bottom_santances">
+                            " Copyright © 2021 KQC "
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="right_part" data-background="assets/tjoj.jpg" style="background-image: url(&quot;assets/tjoj.jpg&quot;);">
+                <div class="gradient-bottom">
+                    <div class="absolute-bottom-left">
+                        <div class="text-light">
+                            <div class="mb-5">
+                                <h1 class="font-weight-bold">Welcome to Tongji Online Judge</h1>
+                                <h5 class="font-weight-normal">World Without End </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    </div>
+    <!-- the_biggest_outer_cowl -->
 </body>
+
 </html>
