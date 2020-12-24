@@ -2,6 +2,7 @@
 @import "common.css";
 
 /* 统一设置 */
+
 a {
     color: #41ac52;
 }
@@ -17,12 +18,15 @@ input[type="password"] {
     font-size: 13px;
 }
 
+
 /* 
     更多的缩进
 */
+
 input[type="text"].more-text-indent {
     padding-left: 60px;
 }
+
 
 /* 统一设置结束 */
 
@@ -202,22 +206,22 @@ input[type="text"].more-text-indent {
     border-bottom: 1px solid #ececec;
 }
 
-.container .qrcode .code{
+.container .qrcode .code {
     text-align: center;
     font-size: 0;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
-.container .qrcode .code img{
+.container .qrcode .code img {
     width: 170px;
     height: 170px;
 }
 
-.container .qrcode .tip{
+.container .qrcode .tip {
     width: 183px;
     height: 25px;
     line-height: 25px;
-    background: rgba(0,0,0,.08);
+    background: rgba(0, 0, 0, .08);
     color: #494949;
     margin: 0 auto;
     text-align: center;
@@ -225,7 +229,7 @@ input[type="text"].more-text-indent {
     margin-top: 10px;
 }
 
-.container .change{
+.container .change {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -233,30 +237,30 @@ input[type="text"].more-text-indent {
     top: 10px;
 }
 
-.container .change .icon{
+.container .change .icon {
     width: 30px;
     height: 30px;
     display: block;
     cursor: pointer;
 }
 
-.container .change .icon.icon-qrcode{
+.container .change .icon.icon-qrcode {
     background: url("../img/icon-qrcode.png") no-repeat left top/100% 100%;
 }
 
-.container .change .icon.icon-pc{
+.container .change .icon.icon-pc {
     background: url("../img/icon-pc.png") no-repeat left top/100% 100%;
 }
 
-.container .change:hover+.pointer{
+.container .change:hover+.pointer {
     display: block;
 }
 
-.container .pointer{
+.container .pointer {
     position: absolute;
     height: 28px;
     line-height: 28px;
-    border: 1px solid rgba(66,189,86,.3);
+    border: 1px solid rgba(66, 189, 86, .3);
     color: #666;
     font-size: 13px;
     background: #f5faf9;
